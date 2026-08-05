@@ -1,12 +1,12 @@
 drop table tb_usuario;
 
-CREATE TABLE cd_tipousuario (
+CREATE TABLE tb_tipousuario (
     cd_tipousuario   SERIAL PRIMARY KEY,
     tx_tipo          VARCHAR(20) NOT NULL UNIQUE,
     tx_descricao     VARCHAR(100)
 );
   
-INSERT INTO cd_tipousuario (tx_tipo, tx_descricao) VALUES
+INSERT INTO tb_tipousuario (tx_tipo, tx_descricao) VALUES
     ('comum', 'Usuário comum, acesso padrão do sistema'),
     ('adm',   'Administrador, acesso completo ao sistema');
     ------------------------------------------------------------------
